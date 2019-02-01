@@ -56,7 +56,7 @@ plot_model(model, to_file='dilated_casual.png', show_shapes=True, show_layer_nam
 
 
 model.compile(optimizer='Adam',loss='mean_absolute_error')
-model.fit(train_X,train_Y,batch_size=512,epochs=1,validation_data=(validation_X,validation_Y))
+model.fit(train_X,train_Y,batch_size=512,epochs=30,validation_data=(validation_X,validation_Y))
 
 pred_seq = np.zeros((X_test.shape[0],16,1))
 prediction_X = X_test
