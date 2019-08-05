@@ -14,6 +14,15 @@ Corporación Favorita has challenged to build a model that more accurately forec
 The prediction of items sales in this task lie within a 16-day window (2018-08-16 to 2018-08-31), given a more sufficient historical sales. The information that can be used for building ML models includes sotre category, items characteristics and sales days. In my working, I reframed this problem as a 1-day prediction out of 16 days each time, and the training data was segmentated at similar weekday with the prediction dates. The training primarily relied on 6 series of this reframed daily sales.
 
 # Models
+•	Interaction effects among products, store types and store location
+
+•	Seasonality or periodicity effects on sales
+
+•	Promotion effects on sales
+
+1.	16-day sales forecasting with series of 16 1-day prediction models
+2.	16-day sales forecasting with one sequence model
+
 
 
 
